@@ -1,26 +1,4 @@
-* TODO 待办事项 [0/13]
-
-    - [ ] emacs org-mode 制作命令模板文件
-    - [ ] Zotero # emacs 文献管理
-    - [ ] org-roam # 安装双链笔记
-    - [ ] 自动对齐注释
-    - [ ] 快捷键映射命令
-    - [ ] 学习配置文件
-    - [ ] toc功能
-    - [ ] git 功能
-    - [ ] 打开行号功能
-    - [ ] Emacs 自动换行功能打开
-    - [ ] 对齐第一个非空格emacs
-    - [ ] emacs 打开链接用浏览器
-    [0/13] 会显示成 [0/13] 的形式。
-    [0%] 会显示成 [0%] 的形式。
-    C-c C-c # 标记待办事项
-    C-c C-t # 标记 TODO 状态
-    windows 文件夹管理
 * linux
-:PROPERTIES:
-:collapsed: true
-:END:
 ** 系统命令
 *** 文件管理
 **** TODO ls
@@ -1043,22 +1021,20 @@ The end
 *** git 流程
 ** shell
 * windows
-:PROPERTIES:
-:collapsed: true
-:END:
 ** 软件安装列表
 *** 办公软件
 
     1. qq 五笔
     2. wps
     3. 有道词典
+
 *** 网络工具
 
     1. 微信
     2. 迅雷
     3. 百度网盘
     4. RaiDrive
-    5.
+
 *** 程序开发
 
     1. emacs
@@ -1066,6 +1042,44 @@ The end
     3. Sourcetree
     4. Cygwin64
     5. python
-* mac
-** 去 fs
-* 检测监控
+
+* autohotkey
+** 热键标记
+
+;这里的 “分号” 表示注释
+;快捷键 alt + n 打开记事本
+!n::Run notepad
+
+;快捷键 alt + y 打开百度云管家
+!y::Run H:\GanJingYunV2\BaiduYunGuanjia.exe
+
+1. 热键标记
+!：是热键标记，这里的感叹号代表键盘上的 alt 键。
+!n：即对应键盘热键 alt + n。
+
+常用热键标记对应关系：
+
+# ：win 键
+! ：alt
+^ ：ctrl
++ ：shift
+2. 连接
+符号 :: 意味着每次按下前面的热键时，随后的命令将会被执行。这里用来连接热键标记和 Run 命令。
+
+3. Run 命令
+Run 命令：用来启动一个程序、文档、URL 网址或者快捷方式。如：
+
+Run Notepad
+Run C:\My Documents\Address List.doc
+Run www.yahoo.com
+Run mailto:someone@somedomain.com
+
+把上面 3 部分组合起来即可实现自定义快捷键。
+
+比如我想通过按 ctrl + q 启动位于 D:\software\QQ.exe 的 QQ 程序，按 alt + b 打开百度，可以这样写：
+
+^q::Run D:\software\QQ.exe
+!b::Run www.baidu.com
+
+
+这样，大家就可以自定义自己的程序启动热键了。
