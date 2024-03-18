@@ -1,1 +1,0 @@
-MsgBox, [ Options, Title, Text, Timeout]
